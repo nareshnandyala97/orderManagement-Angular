@@ -1,0 +1,107 @@
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Sucess !</strong> Order Place successfully.Thank You.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default"
+    >Enter order name</span
+  >
+  <input
+    type="text"
+    [(ngModel)]="order.ordername"
+    placeholder="enter order name"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+  />
+</div>
+
+<br />
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default"
+    >Enter price</span
+  >
+  <input
+    [(ngModel)]="order.price"
+    placeholder="enter price"
+    type="text"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+  />
+</div>
+
+<br />
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default"
+    >Enter brand name</span
+  >
+  <input
+    [(ngModel)]="order.brand"
+    placeholder="enter brand name"
+    type="text"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+  />
+</div>
+<!-- <div class="form-check">
+  <input
+    class="form-check-input"
+    [(ngModel)]="order.Gender"
+    value="Male"
+    type="radio"
+    name="flexRadioDefault"
+    id="flexRadioDefault1"
+  />
+  <label class="form-check-label" for="flexRadioDefault1"> Male </label>
+</div>
+<div class="form-check">
+  <input
+    class="form-check-input"
+    type="radio"
+    [(ngModel)]="order.Gender"
+    value="Female"
+    name="flexRadioDefault"
+    id="flexRadioDefault2"
+    checked
+  />
+  <label class="form-check-label" for="flexRadioDefault2"> Female </label>
+</div> -->
+
+<br />
+
+<button type="button" (click)="save()" class="btn btn-secondary btn-lg">
+  Submit
+</button>
+
+<br />
+<br />
+
+<!-- <button type="button" (click)="sort()" class="btn btn-secondary btn-lg">
+  Sort
+</button>
+<br />
+
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item" *ngFor="let u of orders; index as i">
+    <span> Order name is : {{ u.ordername | ellipsis  }}</span>
+    <br />
+    <span>Order price is : {{ u.price }}</span>
+    <br />
+    <span>Order brand is : {{ u.brand }}</span>
+    <br />
+    <button
+      style="margin: 1%"
+      (click)="deleteRow(u, i)"
+      type="button"
+      class="btn btn-danger"
+    >
+      Delete order
+    </button>
+  </li>
+</ol> -->

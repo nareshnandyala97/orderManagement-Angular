@@ -1,0 +1,16 @@
+{
+  "orders": [
+    {
+      "ordername": "laptop",
+      "price": "2000",
+      "brand": "hp",
+      "id": 1
+    },
+    {
+      "ordername": "tv",
+      "price": "1000",
+      "brand": "lg",
+      "id": 6
+    }
+  ]
+}
